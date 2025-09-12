@@ -1,2 +1,5 @@
-rest_data=load_json('Restaurant_work.py')
+import json
+with open('Restaurant_work.py', "r") as file:
+    rest_data = json.load(file)
+    
 print(rest_data['name'])
