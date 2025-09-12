@@ -1,7 +1,7 @@
 class menu_item:
     import json
     file_path = None
-    with open(f"cool-project/fdf.json", "r") as file:
+    with open(f"cool-project/restaurant_data.json", "r") as file:
         data = json.load(file)
 
     def view_menu_items(data):
@@ -88,15 +88,15 @@ class menu_item:
         print(f"No item found with ID {item_id_to_delete}")
     #-----------DO NOT USE IT UNTIL CLASS ON FRIDAY-------------------
 
-    def save_data_to_json(data, file_path):
+    def save_data_to_json(data):
         import json
-        with open(f"{file_path}fdf.json", "w") as file:
+        with open(f"cool-project/restaurant_data.json", "w") as file:
             json.dump(data, file, indent=4)
        
     #-----------------------------------------------------------------    
     
     add_new_item(data)
-    save_data_to_json(data, file_path)
+    save_data_to_json(data)
     #upload_existing_data(data)
     #add_new_item(data)
     #search_item(data)
