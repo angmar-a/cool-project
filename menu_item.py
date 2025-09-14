@@ -79,10 +79,11 @@ class menu_item:
                         print(f"Item ID {item_id_to_update} stock status updated to {new_stock_status}")
                         return
             print(f"No item found with ID {item_id_to_update}")
+
        else:
             print("Invalid request. Please choose from name, price, or in_stock.")
             return   
-       
+
     def delete_item(data):
         item_id_to_delete = int(input("Enter the item ID to delete: "))
         for category in data["menu"]:
@@ -93,17 +94,22 @@ class menu_item:
                     return
         print(f"No item found with ID {item_id_to_delete}")
 
+
     def save_data_to_json(data):
         import json
         with open(f"cool-project/restaurant_data.json", "w") as file:
             json.dump(data, file, indent=4)
        
     #-----------------------------------------------------------------    
-    
+
     #add_new_item(data)
     #save_data_to_json(data)
+
+
     #upload_existing_data(data)
     #add_new_item(data)
     #search_item(data)
     #delete_item (data)
+
     #view_menu_items(data)   
+
