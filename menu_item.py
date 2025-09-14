@@ -1,7 +1,11 @@
 class menu_item:
     import json
     file_path = None
+
     with open(f"/Users/a20170302012/desktop/cs/labs/cool-project/restaurant_data.json", "r") as file:
+
+    with open(f"cool-project/restaurant_data.json", "r") as file:
+
         data = json.load(file)
 
     def view_menu_items(data):
@@ -20,6 +24,11 @@ class menu_item:
                     break  # Stop inner loop once found
                 if found_item:
                     break  # Stop outer loop once found
+
+                else:
+                    print ("Item not found.")
+                    break 
+
 
         if found_item:
             print(f"Found item with ID {item_id_to_find}: {found_item}")
@@ -76,7 +85,12 @@ class menu_item:
                         print(f"Item ID {item_id_to_update} stock status updated to {new_stock_status}")
                         return
             print(f"No item found with ID {item_id_to_update}")
-    
+
+
+       else:
+            print("Invalid request. Please choose from name, price, or in_stock.")
+            return   
+
     def delete_item(data):
         item_id_to_delete = int(input("Enter the item ID to delete: "))
         for category in data["menu"]:
@@ -86,7 +100,7 @@ class menu_item:
                     print(f"Item ID {item_id_to_delete} has been deleted.")
                     return
         print(f"No item found with ID {item_id_to_delete}")
-    #-----------DO NOT USE IT UNTIL CLASS ON FRIDAY-------------------
+
 
     def save_data_to_json(data):
         import json
@@ -102,3 +116,24 @@ class menu_item:
     search_item(data)
     delete_item (data)
     view_menu_items(data)   
+
+
+    def save_data_to_json(data):
+        import json
+        with open(f"cool-project/restaurant_data.json", "w") as file:
+            json.dump(data, file, indent=4)
+       
+    #-----------------------------------------------------------------    
+
+    #add_new_item(data)
+    #save_data_to_json(data)
+
+
+    #upload_existing_data(data)
+    #add_new_item(data)
+    #search_item(data)
+    #delete_item (data)
+
+    #view_menu_items(data)   
+
+

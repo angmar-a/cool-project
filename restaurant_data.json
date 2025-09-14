@@ -54,12 +54,7 @@
                     "name": "Edamame (Spicy)",
                     "price": 6.49,
                     "in_stock": false
-                },
-                {
-                    "id": "1",
-                    "name": "iloveyou",
-                    "price": 999.0,
-                    "in_stock": false
+
                 }
             ]
         },
@@ -138,24 +133,7 @@
                     "name": "tre",
                     "price": 3456.0,
                     "in_stock": true
-                },
-                {
-                    "id": "88",
-                    "name": "hh",
-                    "price": 88789.0,
-                    "in_stock": false
-                },
-                {
-                    "id": "2",
-                    "name": "iloveyouifyouarewatchingthis",
-                    "price": 250941.0,
-                    "in_stock": true
-                },
-                {
-                    "id": "8",
-                    "name": "aaronifyourewatchingthisurgay",
-                    "price": 8.0,
-                    "in_stock": true
+
                 }
             ]
         },
@@ -186,18 +164,7 @@
                     "name": "Pumpkin Custard",
                     "price": 6.99,
                     "in_stock": false
-                },
-                {
-                    "id": "7",
-                    "name": "kk",
-                    "price": 41124.0,
-                    "in_stock": true
-                },
-                {
-                    "id": "8",
-                    "name": "iloveyouifyourewatchingthisbuturnot",
-                    "price": 999.0,
-                    "in_stock": true
+
                 }
             ]
         }
