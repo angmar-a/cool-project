@@ -55,6 +55,7 @@
                     "price": 6.49,
                     "in_stock": false
                 }
+                
             ]
         },
         {
@@ -132,6 +133,12 @@
                     "name": "tre",
                     "price": 3456.0,
                     "in_stock": true
+                },
+                {
+                    "id": "88",
+                    "name": "hh",
+                    "price": 88789.0,
+                    "in_stock": false
                 }
             ]
         },
