@@ -54,7 +54,6 @@
                     "name": "Edamame (Spicy)",
                     "price": 6.49,
                     "in_stock": false
-
                 }
             ]
         },
@@ -133,7 +132,6 @@
                     "name": "tre",
                     "price": 3456.0,
                     "in_stock": true
-
                 }
             ]
         },
@@ -164,7 +162,6 @@
                     "name": "Pumpkin Custard",
                     "price": 6.99,
                     "in_stock": false
-
                 }
             ]
         }
