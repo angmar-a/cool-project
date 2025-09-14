@@ -4,8 +4,6 @@ class menu_item:
 
     with open(f"/Users/a20170302012/desktop/cs/labs/cool-project/restaurant_data.json", "r") as file:
 
-    with open(f"cool-project/restaurant_data.json", "r") as file:
-
         data = json.load(file)
 
     def view_menu_items(data):
@@ -20,7 +18,7 @@ class menu_item:
         for category in data["menu"]:
             for item in category["items"]:
                 if item["id"] == item_id_to_find:
-                    found_item = item
+                    found_item = True
                     break  # Stop inner loop once found
                 if found_item:
                     break  # Stop outer loop once found
@@ -101,39 +99,26 @@ class menu_item:
                     return
         print(f"No item found with ID {item_id_to_delete}")
 
-
     def save_data_to_json(data):
         import json
         with open("/Users/a20170302012/desktop/cs/labs/cool-project/restaurant_data.json", "w") as file:
             json.dump(data, file, indent=4)
-       
-    #-----------------------------------------------------------------    
-    
-    add_new_item(data)
-    save_data_to_json(data)
-    upload_existing_data(data)
-    add_new_item(data)
-    search_item(data)
-    delete_item (data)
-    view_menu_items(data)   
-
-
-    def save_data_to_json(data):
-        import json
-        with open(f"cool-project/restaurant_data.json", "w") as file:
-            json.dump(data, file, indent=4)
-       
-    #-----------------------------------------------------------------    
-
-    #add_new_item(data)
-    #save_data_to_json(data)
-
-
-    #upload_existing_data(data)
-    #add_new_item(data)
-    #search_item(data)
-    #delete_item (data)
-
-    #view_menu_items(data)   
-
-
+while True:
+    userinput=input("What would you like to do? view_menu_items, search_item, add_new_item, upload_existing_data, delete_item, or quit: ")
+    if userinput == 'view_menu_items':
+        menu_item.view_menu_items(menu_item.data)
+    elif userinput == 'search_item':
+        menu_item.search_item(menu_item.data)
+    elif userinput == 'add_new_item':
+        menu_item.add_new_item(menu_item.data)
+    elif userinput == 'upload_existing_data':
+        menu_item.upload_existing_data(menu_item.data)
+    elif userinput == 'delete_item':
+        menu_item.delete_item(menu_item.data)
+    elif userinput == 'quit':
+        menu_item.save_data_to_json(menu_item.data)
+        print("Data saved. Exiting program.")
+        break
+    else:
+        print("Invalid input")
+        userinput=input("What would you like to do? view_menu_items, search_item, add_new_item, upload_existing_data, delete_item ")
