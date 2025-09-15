@@ -26,12 +26,6 @@
                     "in_stock": true
                 },
                 {
-                    "id": 4,
-                    "name": "Shrimp Tempura",
-                    "price": 8.99,
-                    "in_stock": true
-                },
-                {
                     "id": 5,
                     "name": "Papaya Salad",
                     "price": 7.99,
@@ -55,7 +49,6 @@
                     "price": 6.49,
                     "in_stock": false
                 }
-                
             ]
         },
         {
@@ -169,6 +162,12 @@
                     "name": "Pumpkin Custard",
                     "price": 6.99,
                     "in_stock": false
+                },
+                {
+                    "id": "4",
+                    "name": "Mango Sago",
+                    "price": 4.22,
+                    "in_stock": true
                 }
             ]
         }
