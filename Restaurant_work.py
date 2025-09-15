@@ -9,12 +9,7 @@ class Restaurant:
     def to_dict(self):
         return self.__dict__
 
-# Create a restaurant instance
-restaurant_1 = Restaurant(
-    "KAAKA",
-    "One Lamplighter Way, Mail Center",
-    ["Italian", "Popular & Organic", "Very delicioso"]
-)
+
 
 # Save to a JSON file
 with open("restaurant.json", "w") as f:
