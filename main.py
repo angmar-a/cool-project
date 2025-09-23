@@ -1,21 +1,7 @@
-class Restaurant:
-    def __init__(self, name, location, categories):
-        self.name = name
-        self.location = location
-        self.categories = categories
+from restaurant import Restaurant
 
-    def to_dict(self):
-        return self.__dict__
-
-    def describe(self):
-        return f"{self.name} is located at {self.location}. It offers: {', '.join(self.categories)}"
-
-restaurant_1 = Restaurant(
-    "KAAKA",
-    "One Lamplighter Way, Mail Center",
-    ["Italian", "Popular & Organic", "Very delicioso"]
-)
-print(restaurant_1.describe())
+file_path = "/Users/a20170302012/desktop/cs/labs/cool-project/restaurant_data.json"
+restaurant = Restaurant(file_path)
 
 while True:
     userinput = input("What would you like to do? view_menu_items, search_item, add_new_item, upload_existing_data, delete_item, or quit: ")

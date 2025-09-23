@@ -3,7 +3,6 @@ class MenuItem:
     file_path = None
 
     with open(f"/Users/a20170302012/desktop/cs/labs/cool-project/restaurant_data.json", "r") as file:
-
         data = json.load(file)
 
     def view_menu_items(data):
@@ -18,14 +17,10 @@ class MenuItem:
         for category in data["menu"]:
             for item in category["items"]:
                 if item["id"] == item_id_to_find:
-                    found_item = True
-                    break  # Stop inner loop once found
-                if found_item:
-                    break  # Stop outer loop once found
-
-                else:
-                    print ("Item not found.")
+                    found_item = item
                     break 
+            if found_item:
+                    break  # Stop outer loop once found
 
 
         if found_item:
@@ -103,3 +98,4 @@ class MenuItem:
         import json
         with open("/Users/a20170302012/desktop/cs/labs/cool-project/restaurant_data.json", "w") as file:
             json.dump(data, file, indent=4)
+    #view_menu_items(data)

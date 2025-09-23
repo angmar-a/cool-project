@@ -1,7 +1,7 @@
 {
-    "name": "Kev's Kurry",
-    "location": "45 River St, Springfield",
-    "cuisine": "Thai",
+    "name": "KAAKA",
+    "location": "One Lamplighter Way, Mail Center",
+    "cuisine": "Italian",
     "menu": [
         {
             "category": "Appetizer",
@@ -164,7 +164,7 @@
                     "in_stock": false
                 },
                 {
-                    "id": "4",
+                    "id": 4,
                     "name": "Mango Sago",
                     "price": 4.22,
                     "in_stock": true
